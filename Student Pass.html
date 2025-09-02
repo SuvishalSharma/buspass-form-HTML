@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Pass Application</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>Applicant Details</legend>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required> <br><br>
+
+      <label for="dob">DOB</label>
+      <input type="date" id="dob" name="dob" required> <br><br>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" step="1" min="1" max="50" required> <br><br>
+
+      <label for="photo">Photo</label>
+      <input type="file" id="photo" name="photo" required> <br><br>
+
+      <span>Gender</span>
+      <input type="radio" name="gender" id="male" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="Female">
+      <label for="female">Female</label> <br><br>
+
+      <label for="aadhar">Aadhaar Number</label>
+      <input type="text" id="aadhar" name="aadhar" pattern="[0-9]{12}" required> <small>(12 digits)</small> <br><br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Residential Address Details</legend>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="5" cols="30" required></textarea> <br><br>
+
+      <label for="district">District</label>
+      <select id="district" name="district" required>
+        <option value="">-- Select District --</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Others">Others</option>
+      </select> <br><br>
+
+      <label for="mandal">Mandal</label>
+      <input type="text" id="mandal" name="mandal" required> <br><br>
+
+      <label for="village">Village</label>
+      <input type="text" id="village" name="village" required> <br><br>
+
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pass Type Details</legend>
+      <label for="pass">Pass Type</label>
+      <select id="pass" name="pass" required>
+        <option value="Greater Pass">Greater Pass</option>
+        <option value="Ordinary Pass">Ordinary Pass</option>
+        <option value="Metro Express Pass">Metro Express Pass</option>
+        <option value="Metro Deluxe Pass">Metro Deluxe Pass</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Mode of Payment & Pass Collection</legend>
+      <label for="payment">Payment Mode</label>
+      <select id="payment" name="payment" required>
+        <option value="counter">Payment at Counter</option>
+      </select> <br><br>
+
+      <label for="delivery">Pass Delivery Mode</label>
+      <select id="delivery" name="delivery" required>
+        <option value="counter">At Counter</option>
+      </select>
+    </fieldset>
+
+    <div style="text-align:center;">
+      <input type="submit" value="Submit Application">
+    </div>
+  </form>
+</body>
+</html>
