@@ -6,6 +6,7 @@
   <title>Bus Pass Application</title>
 </head>
 <body>
+  <h1>Bus Pass Application</h1>
   <form action="">
     <fieldset>
       <legend>Applicant Details</legend>
@@ -22,7 +23,7 @@
       <label for="photo">Photo</label>
       <input type="file" id="photo" name="photo" required> <br><br>
 
-      <span>Gender</span>
+      <label>Gender</label>
       <input type="radio" name="gender" id="male" value="Male" required>
       <label for="male">Male</label>
       <input type="radio" name="gender" id="female" value="Female">
@@ -43,7 +44,7 @@
 
       <label for="district">District</label>
       <select id="district" name="district" required>
-        <option value="">-- Select District --</option>
+        <option value="">--Select District --</option>
         <option value="Hyderabad">Hyderabad</option>
         <option value="Others">Others</option>
       </select> <br><br>
@@ -82,8 +83,9 @@
       </select>
     </fieldset>
 
-    <div style="text-align:center;">
+    <div>
       <input type="submit" value="Submit Application">
+      <input type="reset" value="Reset">
     </div>
   </form>
 </body>
